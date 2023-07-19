@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+            <h2>Attendance Record</h2>
+            <button><a href="../index.html">LogOut</a></button>
+            <button><a href="../Php/details.php">Details</a></button>
+    </header>
+    <div class="container">
+        <div class="formBody">
+            <h2>Hello Arjun :)</h2><hr>
+
+            <form action="../Php/dataconn.php" method="post">
+                <div class="data">
+                    <label>Enter the Date </label> : <input type="text" name="date" id="myInputBox"><br><br>
+                    <label>Name of the Subject </label> : 
+                        <select name="subject">
+                            <option>Select The Option</option>
+                            <option value="PMSE">Project Management & Software Engineering</option>             
+                            <option value="ESRTOS">Embedded System & Real Time Operating System</option>        
+                            <option value="OS">Operating System</option>                                        
+                            <option value="AIML">Artifical Intelligence & Machine Learing</option>
+                            <option value="ESRTOSLAB">Embedded System & Real Time Operating System Lab</option> 
+                            <option value="SALAB">System Administration Lab</option>                            
+                            <option value="AIMLLAB">Artifical Intelligence & Machine Learing Lab</option>       
+                            <option value="Seminar">Seminar</option>                                            
+                            <option value="MP">Major Project</option>                                          
+                        </select><br><br>
+                    <label>Enter the Status </label> : 
+                        <select name="Studentstatus">
+                            <option>Select The Option</option>
+                            <option value="present">Present</option>
+                            <option value="Absent">Absent</option>
+                        </select><br><br>
+                    <label>Reason</label> : <input type="text" name="Reason"><br><br>
+                    <label>Teacher </label> : 
+                        <select name="Teacherstatus">
+                            <option>Select The Option</option>
+                            <option value="present">Present</option>
+                            <option value="Absent">Absent</option>
+                        </select><br><br>
+                    <input type="submit" value="Clear" name="clear">
+                    <input type="submit" value="submit" name="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>

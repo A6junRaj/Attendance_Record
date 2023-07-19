@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+.container{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header Start */
+header{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+header h2{
+    color: white;
+    padding: 10px 0px 10px 10px;
+    float: left;
+}
+header select{
+    color: white;
+    height: 35px;
+    background-color: black;
+    margin: 7px 5px 4px 5px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+header button a{        /*Header button style */
+    text-decoration: none;
+    color: white;
+}
+header button{
+    float: right;
+}
+header button:hover,header input:hover{
+    color: cyan;
+    border: 1px solid white;
+    
+}
+header button,header input{
+    color: white;
+    width: 65px;
+    height: 35px;
+    background-color: black;
+    margin: 7px 5px 4px 0px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+
+.Tbody{
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-top: 10%;
+    width: 50%;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid cyan;
+    border-bottom: none;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    font-family: monospace;
+}
+th{
+    background-color: cyan;
+    border: 2px solid black; 
+    color: black;
+}
+td{
+    text-align: center;
+    border: 2px solid white;
+}
+caption{
+    color: white;
+    margin-bottom: 5px;
+}

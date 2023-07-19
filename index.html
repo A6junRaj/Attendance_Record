@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="FormBody">
+            <h2>Hello :)</h2><hr>
+            <form>
+                <input type="text" placeholder="Enter The Username : " id="user"><br><br>
+                <input type="password" placeholder="Enter The Password" id="pass"><br><br>
+                <center><button type="submit" onclick="checkLogin(event)">Login</button></center>
+            </form>
+        </div>
+    </div>
+    <script>
+        function checkLogin(event){
+            event.preventDefault();
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            if (user == "admin" && pass == "123") {
+                window.location.replace("HomePage/Home.html");
+            }else{
+                alert("Sorry Wrong Password or UserName");
+            }
+        }
+    </script>
+</body>
+</html>
+
